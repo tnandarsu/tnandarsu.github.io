@@ -278,60 +278,50 @@ h1 {
 }
 
 /* ----------------------------- */
-/*         SKILLS SECTION        */
+/*              SKILLS           */
 /* ----------------------------- */
 
-.skills-flex {
+.skills-grid {
     display: grid;
     gap: 28px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-.skills-box {
+.skills-card {
     background: var(--card-bg);
-    padding: 28px;
-    border-radius: 20px;
+    padding: 24px;
+    border-radius: 18px;
     box-shadow: 0 8px 18px var(--shadow);
 }
 
-.skills-title {
-    font-size: 20px;
+.skills-heading {
     color: var(--accent);
-    margin-bottom: 16px;
+    font-size: 20px;
+    margin-bottom: 14px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.skills-subtitle {
-    margin: 18px 0 8px;
+.skill-category {
     font-weight: 600;
     font-size: 14px;
+    margin-top: 14px;
     color: var(--accent);
 }
 
-/* Chip styling (rounded pill shape) */
-.chip-wrap {
+.skills-list {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    margin-top: 8px;
 }
 
-.chip {
-    padding: 8px 14px;
-    background: var(--accent-light);
-    border-radius: 30px;
+.skills-list li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.skills-list.small li {
     font-size: 13px;
-    color: var(--text);
-    box-shadow: 0 2px 8px var(--shadow);
-    transition: 0.25s;
-}
-
-.chip:hover {
-    background: var(--accent);
-    color: white;
-    transform: translateY(-2px);
 }
 
 /* ----------------------------- */
