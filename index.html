@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Theint Nandar Su | Portfolio</title>
     <meta name="description" content="Portfolio of Theint Nandar Su — Applied Data Science student, TA, and developer.">
+
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 
 <body>
+
     <!-- NAVBAR -->
     <header class="nav">
         <div class="nav-inner container">
@@ -30,7 +32,7 @@
             </nav>
 
             <button id="theme-toggle" class="theme-toggle">
-                <span class="theme-icon">🌙</span>
+                🌙
             </button>
         </div>
     </header>
@@ -42,8 +44,7 @@
                 <p class="hero-eyebrow">APPLIED DATA SCIENCE · UVIC</p>
                 <h1>Hello, I’m <span class="accent">Theint Nandar Su</span></h1>
                 <p class="hero-subtitle">
-                    Graduate student, TA, and developer passionate about building data-driven systems —
-                    from computer vision projects to synthetic data research.
+                    Graduate student in Data Science and software enginner passionate about building data-driven systems.
                 </p>
 
                 <div class="hero-actions">
@@ -54,9 +55,9 @@
 
             <div class="hero-photo fade-in delay-1">
                 <div class="photo-frame">
-                    <img src="img/profile.jpg" alt="Photo of Theint Nandar Su">
+                    <img src="img/profile.jpg" alt="Photo of Theint">
                 </div>
-                <p class="hero-caption">Based in Victoria · always learning, always building.</p>
+                <p class="hero-caption">· always learning · always building ·</p>
             </div>
         </div>
     </section>
@@ -65,17 +66,24 @@
     <section id="about" class="section">
         <div class="container fade-in">
             <h2 class="section-title"><i class="bi bi-person-fill"></i> About Me</h2>
-            <div class="about-grid">
+
+            <div class="about-card">
                 <p>
-                    Detail-oriented and highly motivated team player with experience in databases,
-                    machine learning, and software development — with a strong interest in data science and big data.
+                    I'm a detail-oriented and motivated developer with experience in databases,
+                    machine learning, and software engineering. I enjoy building meaningful systems
+                    that combine clean software design with intelligent technologies.
                 </p>
+
                 <p>
-                    I enjoy building meaningful systems that blend intelligent technology with clean software design.
+                    Currently, I'm pursuing my MEng in Applied Data Science at the University of Victoria,
+                    where I also work as a Teaching Assistant. Before UVic, I studied Software Engineering 
+                    at KMITL on a full scholarship and completed internships in database development, 
+                    mobile development, and IT analysis.
                 </p>
+
                 <p>
-                    Currently pursuing my MEng in Applied Data Science at UVic and working as a TA.
-                    Previously completed my Software Engineering degree at KMITL on a full scholarship.
+                    My interests include data science, query optimization, and designing real-world tools 
+                    that help people.
                 </p>
             </div>
         </div>
@@ -90,13 +98,13 @@
                 <div>
                     <h3>Master of Engineering in Applied Data Science</h3>
                     <p class="muted">University of Victoria · 2025–2027</p>
-                    <p>Machine learning · optimization · data engineering · applied statistics.</p>
+                    <p>Focus: Machine learning · Optimization · Data Engineering · Applied Statistics.</p>
                 </div>
 
                 <div>
                     <h3>B.Eng. Software Engineering (Intelligent Systems Track)</h3>
                     <p class="muted">KMITL · Full Scholarship · 2020–2024</p>
-                    <p>Focus: ML, databases, mobile development, computer vision.</p>
+                    <p>Focus: Software Development, Databases, Programming, Computer vision.</p>
                 </div>
             </div>
         </div>
@@ -109,93 +117,54 @@
 
             <div class="projects-grid">
 
-                <!-- Agoda -->
                 <article class="project-card">
                     <div class="project-header">
                         <h3>Database Developer Intern</h3>
                         <span class="project-tag">AGODA Services Co. Ltd</span>
                     </div>
-
                     <p class="muted">Apr 2024 – Sep 2024 · Bangkok</p>
-                    <p>
-                        Reviewed SQL code in merge requests, optimized heavy queries, modified schemas & indexes,
-                        and conducted dependency checks to ensure database stability.
-                    </p>
-
-                    <ul class="project-tech">
-                        <li>MSSQL</li><li>Query Optimization</li><li>Scrum</li><li>Grafana</li><li>Jira</li>
-                    </ul>
+                    <p>Reviewed SQL code, optimized heavy queries, modified schemas & indexes.</p>
+                    <ul class="project-tech"><li>MSSQL</li><li>Optimization</li><li>Grafana</li><li>Jira</li></ul>
                 </article>
 
-                <!-- Frontware -->
                 <article class="project-card">
                     <div class="project-header">
                         <h3>Software Developer Intern</h3>
                         <span class="project-tag">Frontware International</span>
                     </div>
-
                     <p class="muted">May 2023 – Jul 2023 · Bangkok</p>
-                    <p>
-                        Worked on the RunOnFlux dashboard using Flutter, customized pie-chart visualization,
-                        and improved UI reusability with modular widgets.
-                    </p>
-
-                    <ul class="project-tech">
-                        <li>Flutter</li><li>Dart</li><li>GitLab</li>
-                    </ul>
+                    <p>Worked on RunOnFlux dashboard, improved UI components, modular widgets.</p>
+                    <ul class="project-tech"><li>Flutter</li><li>Dart</li><li>GitLab</li></ul>
                 </article>
 
-                <!-- City Properties -->
                 <article class="project-card">
                     <div class="project-header">
                         <h3>IT Intern</h3>
                         <span class="project-tag">City Properties Co. Ltd</span>
                     </div>
-
                     <p class="muted">Jun 2022 – Jul 2022 · Yangon</p>
-                    <p>
-                        Analyzed software systems, identified upgrade opportunities, and assisted in proposing
-                        system improvements for operational efficiency.
-                    </p>
-
-                    <ul class="project-tech">
-                        <li>Requirement Analysis</li><li>Problem Solving</li><li>Documentation</li>
-                    </ul>
+                    <p>Analyzed systems, proposed upgrades, improved workflows.</p>
+                    <ul class="project-tech"><li>Analysis</li><li>Documentation</li></ul>
                 </article>
 
-                <!-- TA UVic -->
                 <article class="project-card">
                     <div class="project-header">
                         <h3>Teaching Assistant</h3>
                         <span class="project-tag">University of Victoria</span>
                     </div>
-
                     <p class="muted">Sep 2025 – Present · Victoria</p>
-                    <p>
-                        TA for ECE 255 — supporting students in ARM assembly, embedded systems, debugging,
-                        and labs.
-                    </p>
-
-                    <ul class="project-tech">
-                        <li>ARM Assembly</li><li>Embedded Systems</li><li>Teaching</li>
-                    </ul>
+                    <p>TA for ECE 255 — ARM assembly, embedded debugging, student support.</p>
+                    <ul class="project-tech"><li>ARM</li><li>Embedded</li><li>Teaching</li></ul>
                 </article>
 
-                <!-- TA KMITL -->
                 <article class="project-card">
                     <div class="project-header">
                         <h3>Teaching Assistant</h3>
                         <span class="project-tag">KMITL</span>
                     </div>
-
                     <p class="muted">Aug 2022 – Dec 2022 · Bangkok</p>
-                    <p>
-                        TA for Intro to Logic — assisting students with logic fundamentals and grading.
-                    </p>
-
-                    <ul class="project-tech">
-                        <li>Logic Design</li><li>Academic Support</li>
-                    </ul>
+                    <p>TA for Intro to Logic — grading, student help, tutorials.</p>
+                    <ul class="project-tech"><li>Logic</li><li>Teaching</li></ul>
                 </article>
 
             </div>
@@ -209,19 +178,14 @@
 
             <div class="skills-grid">
 
-                <!-- Soft Skills -->
                 <div class="skills-card">
                     <h3 class="skills-heading"><i class="bi bi-people-fill"></i> Soft Skills</h3>
                     <ul class="skills-list">
-                        <li>Teamwork</li>
-                        <li>Time Management</li>
-                        <li>Effective Communication</li>
-                        <li>Fast-learning</li>
-                        <li>Critical Thinking</li>
+                        <li>Teamwork</li><li>Time Management</li><li>Communication</li>
+                        <li>Fast-learning</li><li>Critical Thinking</li>
                     </ul>
                 </div>
 
-                <!-- Tech Skills -->
                 <div class="skills-card">
                     <h3 class="skills-heading"><i class="bi bi-cpu-fill"></i> Tech Skills</h3>
 
@@ -232,18 +196,15 @@
 
                     <p class="skill-category">Database Management</p>
                     <ul class="skills-list small">
-                        <li>SQL</li><li>MSSQL</li><li>MySQL</li>
-                        <li>Query Optimization</li><li>Database Design</li>
+                        <li>SQL</li><li>MSSQL</li><li>MySQL</li><li>Query Optimization</li>
                     </ul>
 
-                    <p class="skill-category">Tools & Technologies</p>
+                    <p class="skill-category">Tools</p>
                     <ul class="skills-list small">
-                        <li>Google Suite</li><li>Microsoft 365</li><li>Agile</li>
-                        <li>Jira</li><li>Confluence</li><li>Git</li>
+                        <li>Git</li><li>Jira</li><li>Confluence</li><li>Google Suite</li>
                     </ul>
                 </div>
 
-                <!-- Languages -->
                 <div class="skills-card">
                     <h3 class="skills-heading"><i class="bi bi-translate"></i> Languages</h3>
                     <ul class="skills-list">
@@ -257,59 +218,35 @@
         </div>
     </section>
 
-    <!-- PROJECTS (Your version exactly) -->
+    <!-- PROJECTS -->
     <section id="projects" class="section">
         <div class="container fade-in">
             <h2 class="section-title"><i class="bi bi-folder-fill"></i> Projects</h2>
 
             <div class="projects-grid">
 
-                <!-- ClaimIT -->
                 <article class="project-card">
-                    <div class="project-header">
-                        <h3>KMITL ClaimIT – Lost & Found System</h3>
-                        <span class="project-tag">Flutter · Django · ML</span>
-                    </div>
-                    <p>Developed a lost-and-found application with computer vision classification.</p>
-                    <ul class="project-tech">
-                        <li>Flutter</li><li>Django</li><li>FastAPI</li><li>MySQL</li><li>Image Classification</li>
-                    </ul>
+                    <h3>KMITL ClaimIT – Lost & Found System</h3>
+                    <p>Lost-and-found app with CV classification.</p>
+                    <ul class="project-tech"><li>Flutter</li><li>Django</li><li>FastAPI</li></ul>
                 </article>
 
-                <!-- LibMov -->
                 <article class="project-card">
-                    <div class="project-header">
-                        <h3>LibMov – Movie & TV Tracking App</h3>
-                        <span class="project-tag">Python · Firebase</span>
-                    </div>
-                    <p>Movie tracking app with rating, comments, and OMDb integration.</p>
-                    <ul class="project-tech">
-                        <li>Python</li><li>Firebase</li><li>OMDb API</li>
-                    </ul>
+                    <h3>LibMov – Movie & TV Tracking App</h3>
+                    <p>Movie tracking app with OMDb.</p>
+                    <ul class="project-tech"><li>Python</li><li>Firebase</li></ul>
                 </article>
 
-                <!-- Suicide Analysis -->
                 <article class="project-card">
-                    <div class="project-header">
-                        <h3>Global Suicide Rate Analysis</h3>
-                        <span class="project-tag">Data Visualization</span>
-                    </div>
-                    <p>Tableau dashboards exploring suicide trends across generations and demographics.</p>
-                    <ul class="project-tech">
-                        <li>Tableau</li><li>Excel</li>
-                    </ul>
+                    <h3>Global Suicide Rate Analysis</h3>
+                    <p>Tableau dashboards exploring suicide trends.</p>
+                    <ul class="project-tech"><li>Tableau</li><li>Excel</li></ul>
                 </article>
 
-                <!-- Weather Forecast -->
                 <article class="project-card">
-                    <div class="project-header">
-                        <h3>Weather Forecasting Model</h3>
-                        <span class="project-tag">Machine Learning</span>
-                    </div>
-                    <p>ML models including Random Forest, Decision Tree, and SVM to predict rainfall.</p>
-                    <ul class="project-tech">
-                        <li>Random Forest</li><li>Decision Tree</li><li>SVM</li><li>Python</li>
-                    </ul>
+                    <h3>Weather Forecasting Model</h3>
+                    <p>Rainfall prediction using ML models.</p>
+                    <ul class="project-tech"><li>Random Forest</li><li>SVM</li></ul>
                 </article>
 
             </div>
@@ -320,6 +257,7 @@
     <section id="contact" class="section section-alt">
         <div class="container fade-in">
             <h2 class="section-title"><i class="bi bi-envelope-fill"></i> Contact</h2>
+
             <p class="contact-text">Always happy to collaborate or connect.</p>
 
             <div class="contact-links">

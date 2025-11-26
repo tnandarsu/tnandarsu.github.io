@@ -1,27 +1,21 @@
-// Smooth fade when sections scroll into view
+// Fade-in animations
 const faders = document.querySelectorAll(".fade-in");
 
-const appearOptions = {
-    threshold: 0.2,
-};
-
-const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("appear");
-        observer.unobserve(entry.target);
+        if (entry.isIntersecting) {
+            entry.target.classList.add("appear");
+        }
     });
-}, appearOptions);
+}, { threshold: 0.2 });
 
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-});
+faders.forEach(fader => observer.observe(fader));
 
-// Dark Mode Toggle
-const toggleBtn = document.getElementById("theme-toggle");
-toggleBtn.addEventListener("click", () => {
+// Dark mode toggle
+const toggle = document.getElementById("theme-toggle");
+toggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 });
 
-// Auto year in footer
+// Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
