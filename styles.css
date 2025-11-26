@@ -473,3 +473,24 @@ body.dark .footer {
         padding: 64px 0;
     }
 }
+
+/* Smaller, minimal extracurricular cards */
+.small-card {
+    padding: 20px;
+}
+
+.small-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.small-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.small-card .project-tech li {
+    font-size: 11px;
+    padding: 4px 10px;
+}
+
