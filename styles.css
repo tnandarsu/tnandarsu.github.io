@@ -209,24 +209,30 @@ h1 {
 }
 
 /* ----------------------------- */
-/*             ABOUT             */
+/*            ABOUT              */
 /* ----------------------------- */
 
-.about-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+.about-card {
+    background: var(--card-bg);
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px var(--shadow);
+    border-left: 6px solid var(--accent);
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    line-height: 1.75;
+    font-size: 16px;
 }
 
-@media (max-width: 800px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.muted {
+.about-card p {
     color: var(--muted);
-    font-size: 14px;
+}
+
+body.dark .about-card {
+    border-left-color: var(--accent);
 }
 
 /* ----------------------------- */
